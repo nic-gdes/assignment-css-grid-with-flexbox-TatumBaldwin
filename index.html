@@ -4,36 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page: Sheri Tilton with ReMax Spokane Reality</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- nav bar -->
-    <nav id="nav-bar-container flex-row">
-        <img class="asset-img" src="./images/assets_Remax.png" alt="Remax od spokane logo">
-        <img src="./images/assets_Sheri Tilton.png" alt="Sheri Tilton Logo">
-        <link rel="stylesheet" href="style.css">
+    <nav id="nav-bar-container">
+        <div class="flex-row-nav">
+           
+            <!-- nav images -->
+            <img class="asset-img" src="./images/assets_Remax.png" alt="Remax od spokane logo">
 
-        <!-- Hamburger menu -->
-        <div class="hamcontain">
-            <nav id="hamnav">
-            
-                <label for="hamburger">&#9776;</label>
-                <input class="hidden" type="checkbox" id="hamburger"/>
-            
-                <div id="hamitems">
-                    <a href="#">Home</a>
-                    <a href="#">About me</a>
-                    <a href="#">Contact me</a>
-                    <a href="https://www.remax.com/real-estate-agents/sheri-tilton-spokane-valley-wa/100017637#bio-navigation">Listings</a>
-                    <a href="https://www.remax.com/resources/virtual-home-buying">Virtual Tours</a>
-                    <a href="https://www.remax.com/?msclkid=3d6bc4e3c0981f6496b5a01f30df0a3b&utm_source=bing&utm_medium=cpc&utm_campaign=National|Brand&utm_term=%20remax&utm_content=Brand%20BMM">ReMax Realty</a>
-                </div>
+            <a href="./index.html"> <img class="asset-img" src="./images/assets_Sheri Tilton.png" alt="Sheri Tilton Logo">
+            </a>
+
+            <!-- Side nav hamburger -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./index.html">Home</a>
+                <a href="#">About me</a>
+                <a href="#">Contact me</a>
+                <a href="https://www.remax.com/real-estate-agents/sheri-tilton-spokane-valley-wa/100017637#bio-navigation">Listings</a>
+                <a href="https://www.remax.com/resources/virtual-home-buying">Virtual Tours</a>
+                <a href="https://www.remax.com/?msclkid=3d6bc4e3c0981f6496b5a01f30df0a3b&utm_source=bing&utm_medium=cpc&utm_campaign=National|Brand&utm_term=%20remax&utm_content=Brand%20BMM">ReMax Realty</a>
+            </div>
+              
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              
+              <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+              }
+              </script>
         </div>
     </nav>
             
             <!-- hero -->
             <section id="hero">
-                <img class="hero-img" src="" alt="a beautiful home">
+                <img class="hero-img" src="./images/luxeryhome-hero1.jpeg" alt="a beautiful home">
                 <h1 class="autumnflowers-font"> Sheri Tilton</h1>
                 <h2> Spokane Washington</h2>
                 <button class="btn"> Book and Appointment Today!</button>
