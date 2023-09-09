@@ -1,36 +1,71 @@
-          /* Hamburger nav  */
-          .hidden {
-            visibility: hidden;
-        }
-    
-       #hamnav {
-         position: relative;
-        }
-    
-        #hamitems a {
-          box-sizing: border-box;
-          text-align: center;
-          display: block;
-          width: 100%;
-          padding: 10px;
-          text-decoration: none;
-          color: rgb(28, 26, 26);
-          background: rgb(227, 204, 208, 0.9);
-          border: solid 1px rgb(192, 142, 151, 0.4);
-        }
-       
-        /* (B) SHOW HAMBURGER ICON */
-        #hamnav label { 
-          color: rgb(131, 125, 125);
-          background:  transparent;
-          font-style: normal;
-          font-size: 1.2em;
-          padding: 10px;
-        }
-      
-        /* (C) TOGGLE SHOW/HIDE MENU */
-        #hamitems { display: none; }
-        #hamnav input:checked ~ #hamitems { display:block; position: absolute; z-index: 7; width: 60vw;}
-    
-     
-    
+
+
+
+
+.asset-img {
+    width: 100px;
+}
+
+.flex-row-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/* side navigation */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden; 
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #a69b9b;
+  }
+  
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+
