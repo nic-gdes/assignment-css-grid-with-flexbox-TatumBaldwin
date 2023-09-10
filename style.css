@@ -3,20 +3,63 @@
 
 
 /* asset images */
-.asset-img {
+.header-asset-img {
     width: 100px;
+}
+
+.asset-img {
+    width: 60px;
 }
 
 /* flex */
 .flex-row {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .flex-column {
     display: flex;
     flex-direction: column;
 }
+
+
+/* link */
+.links {
+    text-decoration: none;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
+}
+
+a:hover {
+    color: black;
+}
+
+/* text, headings, fonts */
+ .borderbottom, .headings {
+    font-size: 25pt;
+    border-bottom: 3px solid black;
+ }
+
+ .type-style {
+    font-size: 12pt;
+    margin: 20px;
+ }
+
+ .disclaimers {
+    font-size: 10px;
+    text-indent: 20px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+ }
+
+
+
+
+
+
 
 /* nav */
 .flex-row-nav {
@@ -25,10 +68,6 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 15px;
-}
-
-.hero-title {
-
 }
 
 
@@ -79,12 +118,56 @@
   #hero {
     position: relative;
     width: 100vw;
-    height: 200px;
-    background: url(./images/luxeryhome-hero1.jpeg);
+    height: 400px;
+    background: url(./images/luxaryhome-hero2.jpeg);
     background-size: cover;
     background-position: center center;
   }
 
   .hero-content {
     position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 120px;
   }
+
+  .hero-title {
+    font-family: AutumnFlowers;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d8d7cc, 0 0 30px #c2bf6f, 0 0 50px #000000, 0 0 60px #c2bf6f, 0 0 70px #c2bf6f;
+}
+
+    .hero-subtitle {
+        color: white;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        background-color: black;
+    }
+
+    .hero-button {
+        background-color: rgb(135, 76, 40);
+        padding: 15px;
+        border: none;
+        border-radius: 20%;
+        box-shadow:  0 0 3px 3px rgb(0, 0, 0);
+    }
+
+/* Welcome */
+
+.welcomeintro {
+    margin: 0 auto;
+    margin: 20px;
+}
+
+
+
+
+/* footer */
+
+#footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: grey;
+}
