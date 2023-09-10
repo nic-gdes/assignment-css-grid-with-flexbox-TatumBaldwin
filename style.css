@@ -9,6 +9,7 @@
 
 .asset-img {
     width: 60px;
+    margin-left: 20px;
 }
 
 /* flex */
@@ -34,18 +35,19 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:hover {
-    color: black;
-    text-shadow: 0 0 3px #fff;
+    color: rgb(161, 140, 140);
+    text-shadow: 0 0 3px #694545;
 }
 
 /* text, headings, fonts */
  .borderbottom, .headings {
     font-size: 25pt;
     border-bottom: 3px solid black;
-    margin: 20px;
+    margin-left: 20px;
     padding-bottom: 10px;
  }
 
@@ -163,11 +165,11 @@ a:hover {
     }
 
     .hero-button {
-        background-color: rgb(135, 76, 40);
+        background-color: rgb(0, 0, 0);
         padding: 15px;
         border: none;
         border-radius: 20%;
-        box-shadow:  0 0 3px 3px rgb(0, 0, 0);
+        box-shadow:  0 0 3px 3px rgb(175, 153, 153);
     }
 
 /* Welcome */
@@ -196,9 +198,15 @@ a:hover {
 }
 
 /* Virtual call */
+.virtual-calls {
+    margin: 0 auto;
+    margin: 20px;
+}
 .virtual-call-img {
     width: 30%;
 }
+
+
 
 /* footer */
 
@@ -210,4 +218,14 @@ a:hover {
 
 .align-left {
     text-align: left;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    margin-left: 20px;
+    font-size: 10px;
 }
