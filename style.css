@@ -1,18 +1,13 @@
+@font-face { font-family: AutumnFlowers; src: url('./fonts/AutumnFlowers.otf'); } 
 
 
 
-
+/* asset images */
 .asset-img {
     width: 100px;
 }
 
-.flex-row-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-
+/* flex */
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -23,12 +18,23 @@
     flex-direction: column;
 }
 
+/* nav */
+.flex-row-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.hero-title {
+
+}
 
 
 
 
 /* side navigation */
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -68,4 +74,17 @@
     padding: 20px;
   }
   
+  /* hero */
 
+  #hero {
+    position: relative;
+    width: 100vw;
+    height: 200px;
+    background: url(./images/luxeryhome-hero1.jpeg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .hero-content {
+    position: relative;
+  }
