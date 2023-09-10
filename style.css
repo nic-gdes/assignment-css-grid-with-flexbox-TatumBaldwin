@@ -15,8 +15,8 @@
 /* flex */
 .flex-row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .flex-column {
@@ -152,13 +152,13 @@ a:hover {
   .hero-title {
     font-family: AutumnFlowers;
     color: rgb(0, 0, 0);
-    font-size: 100px;
+    font-size: 400%;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d8d7cc, 0 0 30px #c2bf6f, 0 0 50px #000000, 0 0 60px #c2bf6f, 0 0 70px #c2bf6f;
 }
 
     .hero-subtitle {
         color: white;
-        font-size: 30px;
+        font-size: 150%;
         margin-top: 20px;
         margin-bottom: 40px;
         background-color: black;
@@ -177,6 +177,19 @@ a:hover {
 .welcomeintro {
     margin: 0 auto;
     margin: 20px;
+}
+
+#welcome {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(to bottom, #a69b9b, #ffffff)
+}
+
+.sheri-tilton {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 
@@ -203,7 +216,9 @@ a:hover {
     margin: 20px;
 }
 .virtual-call-img {
-    width: 30%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 
@@ -214,6 +229,9 @@ a:hover {
     margin-top: 40px;
     padding: 20px;
     background-color: grey;
+    background: linear-gradient(to bottom,  #ffffff, #a69b9b);
+    border-top: 3px solid black;
+    margin-top: 40px;
 }
 
 .align-left {
@@ -228,4 +246,14 @@ figure {
 figcaption {
     margin-left: 20px;
     font-size: 10px;
+}
+
+.link-align {
+    flex-direction: row;
+    font-size: 30%;
+    justify-content: space-evenly;
+}
+
+.equal-housing-img {
+    width: 10%;
 }
