@@ -39,8 +39,8 @@ a {
 }
 
 a:hover {
-    color: rgb(62, 56, 56);
-    text-shadow: 0 0 3px #694545;
+    font-weight: bold;
+
 }
 
 /* text, headings, fonts */
@@ -52,6 +52,7 @@ a:hover {
  }
 
  .type-style {
+    text-indent: 40px;
     font-size: 12pt;
     margin: 20px;
  }
@@ -195,13 +196,20 @@ a:hover {
 
 /* Listed homes  */
 
-.all-listed-homes {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+#listings {
+    margin-bottom: 40px;
 }
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+}
+
+.home-one {
+    grid-row: 1/3;
+}
+
 
 .listed-home {
     width: 50%;
@@ -243,6 +251,7 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-left: 10px;
 }
 
 figcaption {
@@ -268,4 +277,10 @@ figcaption {
     margin-bottom: 20px;
     margin-left: 3%;
     font-family:sans-serif;
+}
+
+@media  screen and (min-width: 1000px) {
+    .flex-row {
+        flex-direction: row;
+    }
 }
