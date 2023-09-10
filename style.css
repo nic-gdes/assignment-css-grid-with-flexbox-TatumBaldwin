@@ -32,14 +32,21 @@
     font-style: bold;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {
     color: black;
+    text-shadow: 0 0 3px #fff;
 }
 
 /* text, headings, fonts */
  .borderbottom, .headings {
     font-size: 25pt;
     border-bottom: 3px solid black;
+    margin: 20px;
+    padding-bottom: 10px;
  }
 
  .type-style {
@@ -55,7 +62,16 @@ a:hover {
     text-align: center;
  }
 
+/* buttons */
 
+.btn {
+    background-color:rgb(0, 0, 0);
+    width: 60%;
+    height: 30px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 10px;
+}
 
 
 
@@ -162,7 +178,27 @@ a:hover {
 }
 
 
+/* Listed homes  */
 
+.all-listed-homes {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.listed-home {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+/* Virtual call */
+.virtual-call-img {
+    width: 30%;
+}
 
 /* footer */
 
@@ -170,4 +206,8 @@ a:hover {
     margin-top: 40px;
     padding: 20px;
     background-color: grey;
+}
+
+.align-left {
+    text-align: left;
 }
