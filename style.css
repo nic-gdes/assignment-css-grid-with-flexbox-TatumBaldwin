@@ -8,8 +8,8 @@
 }
 
 .asset-img {
-    width: 60px;
-    margin-left: 20px;
+    width: 50px;
+    margin-left: 6px;
 }
 
 /* flex */
@@ -35,11 +35,11 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(61, 58, 58);
 }
 
 a:hover {
-    color: rgb(161, 140, 140);
+    color: rgb(62, 56, 56);
     text-shadow: 0 0 3px #694545;
 }
 
@@ -114,7 +114,7 @@ a:hover {
   }
   
   .sidenav a:hover {
-    color: #a69b9b;
+    color: #857b7b;
   }
   
 
@@ -238,14 +238,16 @@ a:hover {
     text-align: left;
 }
 
+
 figure {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 figcaption {
-    margin-left: 20px;
     font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .link-align {
@@ -257,5 +259,13 @@ figcaption {
 }
 
 .equal-housing-img {
-    width: 10%;
+    width: 50px;
+}
+
+.contactinfo {
+    line-height: 150%;
+    font-size: 10pt;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    font-family:sans-serif;
 }
