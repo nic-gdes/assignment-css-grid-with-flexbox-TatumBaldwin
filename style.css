@@ -1,6 +1,13 @@
 @font-face { font-family: AutumnFlowers; src: url('./fonts/AutumnFlowers.otf'); } 
 
-
+.big-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: none;
+    width: 80vw;
+    gap: 1.5em;
+}
 
 /* asset images */
 .header-asset-img {
@@ -15,8 +22,11 @@
 /* flex */
 .flex-row {
     display: flex;
+    margin: 0 auto;
+    width: 70vw;
     flex-direction: column;
     justify-content: center;
+    gap: 1.5em;
 }
 
 .flex-column {
@@ -45,16 +55,22 @@ a:hover {
 
 /* text, headings, fonts */
  .borderbottom, .headings {
-    font-size: 25pt;
-    border-bottom: 3px solid black;
-    margin-left: 20px;
-    padding-bottom: 10px;
+    font-size: 2em;
+    color: rgb(54, 49, 49);
+    border-bottom: 3px solid rgb(199, 106, 63, 0.6);
+    border-radius: 10%;
+    padding: 1rem;
+    margin: 1em;
+    text-align: center;
  }
 
  .type-style {
-    text-indent: 40px;
-    font-size: 12pt;
-    margin: 20px;
+    text-align: left;
+    text-indent: 50px;
+    font-size: 16pt;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
  }
 
  .disclaimers {
@@ -69,11 +85,10 @@ a:hover {
 
 .btn {
     background-color:rgb(0, 0, 0);
-    width: 60%;
-    height: 30px;
+    width: 200px;
+    padding: 1em;
     border: none;
     margin: 0 auto;
-    margin-top: 10px;
 }
 
 
@@ -152,9 +167,9 @@ a:hover {
 
   .hero-title {
     font-family: AutumnFlowers;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 400%;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d8d7cc, 0 0 30px #c2bf6f, 0 0 50px #000000, 0 0 60px #c2bf6f, 0 0 70px #c2bf6f;
+    text-shadow: 0 0 10px #e9831d, 0 0 20px #fff, 0 0 30px #a02f10, 0 0 30px #c2bf6f, 0 0 50px #000000, 0 0 60px #ec6e1a, 0 0 70px #c2bf6f;
 }
 
     .hero-subtitle {
@@ -162,6 +177,7 @@ a:hover {
         font-size: 150%;
         margin-top: 20px;
         margin-bottom: 40px;
+        padding: 0.5rem;
         background-color: black;
     }
 
@@ -177,20 +193,11 @@ a:hover {
 
 .welcomeintro {
     margin: 0 auto;
-    margin: 20px;
 }
 
-#welcome {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: linear-gradient(to bottom, #a69b9b, #ffffff)
-}
-
-.sheri-tilton {
-    width: 200px;
-    height: 200px;
+.main-imgs {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 0.5rem;
 }
 
 
@@ -202,9 +209,15 @@ a:hover {
 
 .grid-layout {
     display: grid;
+    width: 70vw;
     margin: 50px 20px;
+    margin: 0 auto;
     grid-template-columns: 4;
     grid-template-rows: 4;
+}
+
+.all-listed-homes {
+    margin-bottom: 1.5em;
 }
 
 .home-one {
@@ -237,14 +250,12 @@ a:hover {
     justify-content: center;
 }
 .virtual-calls {
-    margin: 0 auto;
     margin: 20px;
     margin-top: 60px;
 }
 .virtual-call-img {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
+    align-self: center;
+    width: 40%
 }
 
 
@@ -270,7 +281,6 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 10px;
 }
 
 figcaption {
@@ -298,27 +308,25 @@ figcaption {
     font-family:sans-serif;
 }
 
-@media  screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
+    
     .flex-row {
         flex-direction: row;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .headings {
+        width: 800px;
+        margin: 1em auto;
     }
 
     .type-style {
-        width: 60%;
-        margin: auto;
-     }
+        max-width: 500px;
+    }
 
-     #welcome, #listings, #virtual-tours {
-        width: 90vw;
-        margin: 0 auto;
-        padding: 5%;
-     }
+    .main-imgs {
+        margin: 0;
+    }
 
-     .listed-home {
-        width: 80%;
-     }
-
-     .virtual-call-img {
-        width: 40%;
-     }
 }
