@@ -53,15 +53,25 @@ a:hover {
 
 }
 
+.link-align {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
 /* text, headings, fonts */
  .borderbottom, .headings {
     font-size: 2em;
     color: rgb(54, 49, 49);
+
     border-bottom: 3px solid rgb(199, 106, 63, 0.6);
-    border-radius: 10%;
+    border-radius: 20px;
     padding: 1rem;
     margin: 1em;
     text-align: center;
+    box-shadow: 0px 5px rgba(135, 72, 42, 0.6);
  }
 
  .type-style {
@@ -84,7 +94,8 @@ a:hover {
 /* buttons */
 
 .btn {
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(199, 106, 63, 0.6);
+    box-shadow: 0px 5px rgba(135, 72, 42, 0.6);
     width: 200px;
     padding: 1em;
     border: none;
@@ -267,7 +278,7 @@ a:hover {
     margin-top: 40px;
     padding: 20px;
     background-color: grey;
-    background: linear-gradient(to bottom,  #ffffff, #a69b9b);
+    background: linear-gradient(to bottom,  #ffffff, #d7a274);
     border-top: 3px solid black;
     margin-top: 40px;
 }
